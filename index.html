@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="img/pokebola.png" type="image/x-icon">
+    <link rel="icon" href="img/pokebola.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="search">
+            <img src="./img/buscar.png" id="search" alt="Logo Buscar">
+            <input type="text" name="pokeName" id="pokeName" placeholder="Busca algún pokémon">
+        </div>
+        <p id="txtstatus" class="txtstatus removed"></p>
+        <section>
+            <img src="./img/pokebola.png" alt="Pokebola" id="pokeImg">
+            <div class="sectall">
+                <h2 id="namepokemon" class="namepokemon">Nombre del pokémon</h2>
+                <h3 id="typepokemon" class="typepokemon">Tipo de pokémon</h3>
+                <div class="stats">
+                    <h3>Estadisticas</h3>
+                    <div class="infStats">
+                        <div class="statsLado1">
+                            <p id="vida">Vida:</p>
+                            <p id="ataque">Ataque:</p>
+                            <p id="defensa">Defensa:</p>
+                        </div>
+                        <div class="statsLado2">
+                            <p id="velocidad">Velocidad:</p>
+                            <p id="ataqueespecial">Ataque especial:</p>
+                            <p id="defensaespecial">Defensa especial:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats">
+                    <h3>Movimientos</h3>
+                    <div class="infMovimientos">
+                        <p id="movimiento1">Movimiento 1</p>
+                        <p id="movimiento2">Movimiento 2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>

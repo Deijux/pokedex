@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #052F5F;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    width: 90%;
+    height: 53px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #005377;
+    border-radius: 10px;
+    max-width: 800px;
+    min-width: 300px;
+}
+
+.search > input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    width: 223px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.search > input::placeholder {
+    color: rgb(180, 180, 180);
+}
+
+.search > img {
+    width: 30px;
+    height: 30px;
+}
+
+.removed {
+    display: none;
+}
+
+.txtstatus {
+    font-size: 20px;
+    background-color: #c6870a;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 0px 0px 20px 0px;
+}
+
+section {
+    background-color: #005377;
+    width: 90%;
+    height: 610px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+    max-width: 800px;
+    min-width: 310px;
+}
+
+section > img {
+    width: 193px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 10px;
+}
+
+.sectall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats {
+    margin: 10px 0px;
+    width: 300px;
+    background-color: #06A77D;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infStats,
+.infMovimientos {
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px 0px 5px 0px;
+    font-size: 17px;
+}
+
+.namepokemon,
+.typepokemon {
+    margin: 0px 0px 5px 0px;
+}
+
+.typepokemon {
+    font-size: 22px;
+}
+
+@media (min-width: 320px) {
+    body {
+        height: 90vh;
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 100px;
+        height: 400px;
+    }
+    section > img {
+        margin: 0px;
+    }
+}
