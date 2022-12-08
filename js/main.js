@@ -18,7 +18,7 @@ const buscarPokemon = () => {
     const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
     fetch(url).then((res) => {
         if (res.status != "200") {
-            pokeImage("../img/pokemon-sad.jpg");
+            pokeImage("./img/pokemon-sad.jpg");
             txtStatus.textContent = 'Pokémon no encontrado';
             txtStatus.classList.remove('removed')
         } else if (pokeName === '') {
